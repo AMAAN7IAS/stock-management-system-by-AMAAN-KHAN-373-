@@ -1,0 +1,113 @@
+#include<stdio.h>
+
+int main(){
+    printf("****************************************\n");
+    printf("stock no:1 \n");
+    printf("SBI \n");
+    int a,b,c;
+    printf("current price of stock \n");
+    scanf("%d",&a);
+    printf("selling price of stock \n");
+    scanf("%d",&b);
+    printf("no of stocks \n");
+    scanf("%d",&c);
+    printf("****************************************\n");
+    int d=(b-a);
+    if(d>=0){
+        printf("Each stock is having profit of:%d Rs \n",d);
+    }
+    else if(d<0){
+        printf("Each stock is having a loss of:%d Rs \n",d);
+    }
+    int e=(b*c-a*c);
+    if(e>=0){
+        printf("overall profit from this stock is:%d Rs \n",e);
+    }
+    else if(e<0){
+        printf("overall loss from this stock is:%d Rs \n",e);
+    }
+    printf("****************************************\n");
+    int f,g,h;
+    printf("stock no:2 \n");
+    printf("BIOCON \n");
+    printf("current price of stock \n");
+    scanf("%d",&f);
+    printf("selling price of stock \n");
+    scanf("%d",&g);
+    printf("no of stocks \n");
+    scanf("%d",&h);
+    printf("****************************************\n");
+      int i=(g-f);
+    if(i>=0){
+        printf("Each stock is having profit of:%d Rs \n",i);
+    }
+    else if(i<0){
+        printf("Each stock is having a loss of:%d Rs \n",i);
+    }
+    int j=(g*h-f*h);
+    if(j>=0){
+        printf("overall profit from this stock is:%d Rs \n",j);
+    }
+    else if(j<0){
+        printf("overall loss from this stock is:%d Rs \n",j);
+    }
+        printf("****************************************\n");
+        int k,l,m;
+        printf("stock no:3 \n");
+        printf("KPT \n");
+        printf("current price of stock \n");
+        scanf("%d",&k);
+        printf("selling price of stock \n");
+        scanf("%d",&l);
+        printf("no of stocks \n");
+        scanf("%d",&m);
+        printf("****************************************\n");
+        int n=(l-k);
+    if(n>=0){
+        printf("Each stock is having profit of:%d Rs \n",n);
+    }
+    else if(n<0){
+        printf("Each stock is having a loss of:%d Rs \n",n);
+    }
+    int o=(l*m-k*m);
+    if(o>=0){
+        printf("overall profit from this stock is:%d Rs \n",o);
+    }
+    else if(o<0){
+        printf("overall loss from this stock is:%d Rs \n",o);
+    }
+        printf("****************************************\n");
+        printf("divident yield of each stock as follows:\n");
+        printf("stock:1:SBI\n");
+        int p=(a)*12/100;
+        printf("divident given by SBI to investor in 1 year is:%d Rs \n",p);
+        printf("****************************************\n");
+        printf("stock:2:BIOCON \n");
+        int q=(f)*12/100;
+        printf("divident given by BIOCON to investor in 1 year is:%d Rs \n",q);
+        printf("****************************************\n");
+        printf("stock:3:KOTHARI PETROCHEMICALS \n");
+        int r=(k)*12/100;
+        printf("divident given by KPT to investor in 1 year is:%d Rs \n",r);
+        printf("****************************************\n");
+        printf("ROE of each share as follows:\n");
+        printf("stock:1:SBI\n");
+        int s=(b)/p;
+        printf("ROE of SBI is:%d % \n",s);
+        printf("****************************************\n");
+        printf("stock:2:BIOCON\n");
+        int t=(g)/q;
+        printf("ROE of BIOCON is:%d % \n",t);
+        printf("****************************************\n");
+        printf("stock:3:KPT\n");
+        int u=(l)/r;
+        printf("ROE of KPT is:%d % \n",u);
+        printf("****************************************\n");
+        int v=(b-a)+(g-f)+(l-k);
+        printf("Overall P/L on all stocks in portfolio:%d Rs \n ",v);
+        int w=v/100;
+        printf("Overall P/L on all stocks in portfolio:%d % \n",w);
+        printf("****************************************\n");
+        printf("THANKS FOR WATCHING!!!\n");
+    return 0;
+}
